@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraConf</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <section id="section-header">        
+            <div id="div-cabecalho">
+                <a href="#">
+                    <h1>CONFTECH</h1>
+                    <h2>A conferência de tecnologia mais esperada do ano</h2>
+                    <p>30 MAIO - SÃO PAULO</p>
+                </a>
+            </div>
+            <nav id="nav-header">
+                <a href="#secao-palestrantes" ><input id="botao-palestrantes" class="botao-nav" type="button" value="Confira os palestrantes"></a>
+                <a href="#secao-form-inscricao"><input id="botao-inscricao" class="botao-nav type="button" value="INSCREVA-SE"></a>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <article>
+            <section id="sobre" >
+                <h2>Muito conteúdo: do frontend ao backend</h2>
+                <h3>30 de Maio de 2021 - São Paulo/SP</h3>
+                <p>Com a ConfTech abordaremos novidades e conhecimentos essenciais para um desenvolvedor.</p>
+                <p>Quer ficar por dentro dos assuntos mais modernos do universo da programação? Inscreva-se abaixo.</p>
+            </section>
+
+            <section id="secao-palestrantes">
+                <h2 id="titulo-palestrantes">Palestrantes</h2>
+                <p id="p-palestrantes">Aprenda com profissionais da área que são referência no mercado</p>
+                <section id="palestrantes">
+                    <div>
+                        <img src="./img/palestrantes/placeholder.jpeg" alt="" srcset="">
+                        <h3>Nome Do Palestrante</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <img src="./img/palestrantes/placeholder.jpeg" alt="" srcset="">
+                        <h3>Nome Do Palestrante</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <img src="./img/palestrantes/placeholder.jpeg" alt="" srcset="">
+                        <h3>Nome Do Palestrante</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <img src="./img/palestrantes/placeholder.jpeg" alt="" srcset="">
+                        <h3>Nome Do Palestrante</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <img src="./img/palestrantes/placeholder.jpeg" alt="" srcset="">
+                        <h3>Nome Do Palestrante</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <img src="./img/palestrantes/placeholder.jpeg" alt="" srcset="">
+                        <h3>Nome Do Palestrante</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <img src="./img/palestrantes/placeholder.jpeg" alt="" srcset="">
+                        <h3>Nome Do Palestrante</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </section>
+            </section>
+
+            <section id="secao-form-inscricao">
+                <h2>Realize sua inscrição:</h2>
+                <form action="" method="post" id="form-inscricao">
+                    <label for="nome-form">Nome:</label>
+                    <input type="text" name="" id="nome-form">
+                    <label for="email-form">Email:</label>
+                    <input type="email" name="" id="email-form">
+                    <label for="profissao-form">Profissão:</label>
+                    <input type="text" name="" id="profissao-form">
+                    <select name="" id="select-form">
+                        <option value="">Selecione uma opção</option>
+                        <option value="">Não tenho nenhuma experiência com programação</option>
+                        <option value="">Já tive alguma experiência / contato com programação</option>
+                        <option value="">Possuo uma experiência média em programação</option>
+                        <option value="">Sou muito experiente em programação</option>
+                    </select>
+                    <div id="div-checkbox">
+                        <input type="checkbox" name="" id="checkbox-form" checked>
+                        <label for="checkbox-form">Desejo receber novidades por email</label>
+                    </div>
+                    <input type="submit" value="REALIZAR INSCRIÇÃO" id="submit-form">
+                </form>
+            </section>
+        </article>
+    </main>
+    
+    <footer>
+        <p>CONFTECH</p>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

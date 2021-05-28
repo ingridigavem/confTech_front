@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+:root{
+    --font-paragrafos-desktop: 2.5vw;
+    --font-titulos-desktop: 5vw;
+    --font-paragrafos-celular: 6vw;
+    --font-titulos-celular: 7vw;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
+}
+
+#section-header{
+    background-image: url("../img/sao_paulo_noite.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 10px 0 5px 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#div-cabecalho a{
+    text-decoration: none;
+    color: #00fff3;
+    text-align: center;
+    
+}
+
+#div-cabecalho h1{
+    font-size: 8vw;
+}
+
+#div-cabecalho h2{
+    font-size: 3.5vw;
+}
+
+#div-cabecalho p{
+    padding: 5px;
+    font-size: 2.5vw;
+}
+
+#nav-header{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botao-nav{
+    font-size: 2vw;
+    background-color: #1179A6;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+#botao-palestrantes{
+    background-color: rgba(109, 151, 175, 0.507);
+    color: rgb(255, 255, 255);
+   
+}
+
+#botao-palestrantes:hover{
+    background-color: rgba(27, 27, 27, 0.692);
+    color: white;
+    cursor: pointer;
+}
+
+#botao-inscricao:hover{
+    opacity: 80%;
+    color: rgb(8, 9, 73);
+    cursor: pointer;
+}
+
+main{
+    
+    padding: 10px 100px 10px 100px;
+    background-color: #fffafa;
+    width: 100%;
+}
+
+#sobre{
+    text-align: center;
+}
+
+#sobre h2{
+    font-size:  var(--font-titulos-desktop);
+    font-weight: bold;
+}
+
+#sobre h3{
+    font-size: 2.5vw;
+    font-style: italic;
+    padding: 10px;
+}
+
+#sobre p{
+    font-size: var(--font-paragrafos-desktop);
+    text-align: left;
+    padding: 5px;
+}
+
+#titulo-palestrantes{
+    font-size: var(--font-titulos-desktop);
+    font-weight: bold;
+    text-align: center;
+    padding:20px;
+}
+
+#p-palestrantes{
+    font-size: var(--font-paragrafos-desktop);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#palestrantes{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 13px;
+}
+
+#palestrantes div{
+    background-color: #1179a6c2;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+}
+
+#palestrantes img{
+    padding-bottom: 10px;
+    border-radius: 50%;
+    width: 80%;
+}
+
+#palestrantes h3{
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+#palestrantes p{
+    padding-top: 5px;
+    font-size: 1.75vw;
+}
+
+#secao-form-inscricao h2{
+    font-size: 4vw;
+    font-weight: bold;
+    padding: 20px 20px 0px 20px;
+}
+
+#form-inscricao{
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 2.5vw;
+}
+
+#secao-form-inscricao label{
+    padding: 8px;
+}
+
+#nome-form, #email-form, #profissao-form, #submit-form {
+    font-size: var(--font-paragrafos);
+    border-radius: 6px;
+    border: black solid 1px;
+}
+
+#select-form {
+    font-size: 1.5rem;
+    padding: 6px;
+    border-radius: 6px;
+    margin: 20px 0 10px 0;
+    border: black solid 1px;
+}
+
+#checkbox-form {
+   transform: scale(2);
+   margin: 0 10px 0 10px;
+}
+
+#div-checkbox{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#submit-form{
+    background-color: #1179A6;
+    border: none;
+    width: 50%;
+    margin: auto;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 1.75rem;
+    color: white;
+    font-weight: bold;
+}
+
+#submit-form:hover{
+    transition: 500ms;
+    transform: scale(1.125);
+    cursor: pointer;
+}
+
+footer{
+    background-image: url("../img/sao_paulo_noite.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    font-size: 7vw;
+    text-align: center;
+    color: #00fff3;
+    padding: 20px;
+    height: auto;
+}
+
+
+/*media query*/
+
+@media screen and (max-width: 800px) {
+    main{
+        padding: 5px 25px 5px 25px;
+    }
+
+    #div-cabecalho h1{
+        font-size: 12vw;
+    }
+    
+    #div-cabecalho h2{
+        font-size: 5vw;
+    }
+    
+    #div-cabecalho p{
+        font-size: 3.5vw;
+    }
+
+    .botao-nav{
+        padding: 5px;
+        font-size: 3.5vw;
+    }
+
+    #sobre p, #p-palestrantes, #form-inscricao {
+        font-size: var(--font-paragrafos-celular);
+    }
+
+    #div-cabecalho p{
+        font-size: 3.75vw;
+    }
+
+    #palestrantes p{
+        font-size: 4.25vw;
+    }
+
+    #submit-form{
+        width: 100%;
+        font-size: 6vw ;
+    }
+
+    #palestrantes h3{
+        font-size: var(--font-titulos-celular);
+    }
+
+    #sobre h2, #titulo-palestrantes, #secao-form-inscricao h2{
+        font-size: var(--font-titulos-celular);
+    }
+
+    #sobre h3, #palestrantes p{
+        font-size: 5vw;
+    }
+    
+    #select-form {
+        font-size: 0.90rem;
+        padding: 3px;
+    }
+    
+    #checkbox-form {
+       transform: scale(1.5);
+    }
+}
